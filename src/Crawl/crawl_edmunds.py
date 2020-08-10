@@ -398,7 +398,7 @@ class Edmunds():
 
         return dataset
 
-    def save(self, data, filename="final"):  # Convert to Json
+    def save(self, data, filename="EV_lists"):  # Convert to Json
         with open(self.res_path + "/res/data_{}.json".format(filename), "w") as json_file:
             json.dump(data, json_file)
 
